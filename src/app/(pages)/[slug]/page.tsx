@@ -57,7 +57,6 @@ export default async function Page({ params: { slug = 'home' } }) {
   return (
     <React.Fragment>
       <Hero {...hero} />
-      {/* added new key*/}
       <Blocks
         blocks={layout}
         disableTopPadding={!hero || hero?.type === 'none' || hero?.type === 'lowImpact'}
